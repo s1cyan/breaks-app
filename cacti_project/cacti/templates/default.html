@@ -1,0 +1,17 @@
+<!Doctype html>
+
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title> {{ title }}</title>
+	{# css reference #}
+	<link href="static/css/materialize.css" type="text/css" rel="stylesheet">
+	{% block css %}
+	{% endblock %}
+</head>
+<body>
+{% include "topnav.html" %}
+{% include "sidenav.html" %}
+</body>
+
+</html>
