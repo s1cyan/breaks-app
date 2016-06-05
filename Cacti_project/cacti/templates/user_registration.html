@@ -1,9 +1,45 @@
 {% extends "default.html" %}
 
-{% block main %}
-    <div class="row">
-        <form class="col s12">
+{% block css %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock %}
 
+{% block main %}
+    <br>
+    <div class="row">
+        <h4 class="teal-text center-align">Let's get you signed up!</h4>
+    </div>
+    <div class="row">
+        <form class="col s4 push-s4" method="post" action="{{ action_user_registration }}">
+            <div class="row input-field">
+                <label for="username">Username</label>
+                <input id="username" name="username" value="" type="text" required>
+            </div>
+
+            <div class="row input-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" value="" type="email" class="validate" required>
+            </div>
+
+            <div class="row input-field">
+                <label for="password">Password</label>
+                <input id="password" name="password" value="" type="password" required>
+            </div>
+
+            <div class="row input-field">
+                <label for="retype-password">Retype Password</label>
+                <input id="retype-password" type="password" required>
+            </div>
+
+            <button class="btn waves-effect waves-light col s4 push-s4" type="submit" name="action">
+                Submit<i class="material-icons right">send</i>
+            </button>
         </form>
     </div>
+{% endblock %}
+
+
+{% block scripts %}
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="/static/js/materialize.min.js"></script>
 {% endblock %}
