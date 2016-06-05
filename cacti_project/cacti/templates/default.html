@@ -1,13 +1,13 @@
 <!Doctype html>
-
 <html lang="en-us">
 <head>
-	<meta charset="utf-8">
-	<title> {{ title }}</title>
-	{# css reference #}
-	<link href="static/css/materialize.css" type="text/css" rel="stylesheet">
-	{% block css %}
-	{% endblock %}
+    <meta charset="utf-8">
+    <title> {{ title }}</title>
+    {# CSS Reference #}
+    <link href="static/css/materialize.css" type="text/css" rel="stylesheet">
+    {# Use the css block to create any references for CSS #}
+    {% block css %}
+    {% endblock %}
 </head>
 <body>
 <header>
@@ -28,7 +28,5 @@
     {% block footer %}
     {% endblock %}
 </footer>
-
 </body>
-
 </html>
