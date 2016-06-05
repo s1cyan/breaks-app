@@ -1,0 +1,36 @@
+<!Doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title> {{ title }}</title>
+    {# CSS Reference #}
+    {# Use the css block to create any references for CSS #}
+    {% block css %}
+    {% endblock %}
+    <link href="static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>
+<body>
+<header>
+    {% include "topnav.html" %}
+    {# Use the header block to extend any header properties #}
+    {% block header %}
+    {% endblock %}
+</header>
+
+<main>
+    {# Use the main block to override any main content #}
+    {% block main %}
+    {% endblock %}
+
+    {% block scripts %}
+    {% endblock %}
+</main>
+
+<footer>
+    {# Use the footer block to override any main content #}
+    {% block footer %}
+    {% endblock %}
+</footer>
+</body>
+</html>

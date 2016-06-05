@@ -4,6 +4,9 @@
 # swap files generated from Vim
 *.swp
 
+# Migrations
+*/migrations/
+
 # Virtualenv Files
 /[Vv]env/
 /[Ee]nv/
