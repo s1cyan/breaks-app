@@ -10,8 +10,25 @@
 	{% endblock %}
 </head>
 <body>
-{% include "topnav.html" %}
-{% include "sidenav.html" %}
+<header>
+    {% include "topnav.html" %}
+    {# Use the header block to extend any header properties #}
+    {% block header %}
+    {% endblock %}
+</header>
+
+<main>
+    {# Use the main block to override any main content #}
+    {% block main %}
+    {% endblock %}
+</main>
+
+<footer>
+    {# Use the footer block to override any main content #}
+    {% block footer %}
+    {% endblock %}
+</footer>
+
 </body>
 
 </html>
